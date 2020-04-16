@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 def LLKLIEP(theta, kP, kQ):
     """
-    Calculate log-likelihood and gradient
+    Calculate log-likelihood
     
     parameters:
     theta:
@@ -89,8 +89,6 @@ if __name__ == '__main__':
     P_cov, Q_cov = np.eye(dim), np.eye(dim)
     index = [x for x in range(dim)]
     diff_edge_elm = np.array([np.random.choice(index, 2, replace=False) for _ in range(diff_edge)])
-    #diff_edge_row = np.random.choice(index, diff_edge, replace=False)
-    #diff_edge_col = np.random.choice(index, diff_edge, replace=False)
     Q_cov[diff_edge_elm[:,0], diff_edge_elm[:,1]] = 0.5
     Q_cov[diff_edge_elm[:,1], diff_edge_elm[:,0]] = 0.5
     
