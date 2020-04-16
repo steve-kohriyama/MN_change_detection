@@ -1,4 +1,4 @@
-#Change edge detection between two Markov networks
+# Change edge detection between two Markov networks
 
 Original code is `http://allmodelsarewrong.net/kliep_sparse/demo_sparse.html`.
 
